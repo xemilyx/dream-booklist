@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dream Book List</title>
+</head>
+<body>
+   <p>Here is a list of my favorite books. You should really check them out!</p>
+   <div id = tagContainer>
+       <button onclick = views.tagSelected('chapter')>chapter</button>
+       <button onclick = views.tagSelected('adventure')>adventure</button>
+       <button onclick = views.tagSelected('realistic')>realistic</button>
+       <button onclick = views.tagSelected('graphic_novel')>graphic novel</button>
+       <button onclick = views.tagSelected('middle_school')>middle school</button>
+       <button onclick = views.tagSelected('summer')>summer</button>
+    </div>
+    <div id = booksContainer>
+      <div id="1338053868" class = "littleBook"></div>
+      <div id="1250164168" class = "littleBook"></div>
+      <div id="1407178946" class = "littleBook"></div>
+    </div>
+    <script src = "script.js"></script>
+    <script src="//books.google.com/books?jscmd=viewapi&bibkeys=1338053868,1250164168,1407178946&callback=ProcessGBSBookInfo">
+    </script>  
+</body>
+</html>
